@@ -1,6 +1,5 @@
 import React, {
   Component,
-  PropTypes,
 } from 'react';
 import {
   Dimensions,
@@ -20,27 +19,6 @@ class GridView extends Component {
 
   static get DataSource() {
     return ListView.DataSource;
-  }
-
-  static get propTypes() {
-    return {
-      data: PropTypes.array,
-      fillMissingItems: PropTypes.bool,
-      itemsPerRow: PropTypes.number,
-      itemsPerRowLandscape: PropTypes.number,
-      itemsPerRowPortrait: PropTypes.number,
-      itemStyle: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.number,
-        PropTypes.array,
-      ]),
-      renderItem: PropTypes.func.isRequired,
-      rowStyle: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.number,
-        PropTypes.array,
-      ]),
-    };
   }
 
   static get defaultProps() {
