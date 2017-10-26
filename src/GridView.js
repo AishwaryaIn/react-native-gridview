@@ -145,8 +145,8 @@ class GridView extends Component {
       const items = data.slice(startIndex, endIndex);
 
       if (this.props.fillMissingItems && items.length < itemsPerRow) {
-        const diff = itemsPerRow - items.length;
-        items.push(...Array(diff).fill(null));
+        const diff = itemsPerRow - items.length ;
+        items.push(...Array(diff));
       }
 
       rowData.push(items);
