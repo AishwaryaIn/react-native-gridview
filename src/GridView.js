@@ -137,6 +137,7 @@ class GridView extends Component {
   _getRowData(data) {
     const itemsPerRow = this.itemsPerRow;
     const rowCount = Math.ceil(data.length / itemsPerRow);
+    console.log("*********** rowCount="+rowCount)
     const rowData = [];
 
     for (let i = 0; i < rowCount; i++) {
