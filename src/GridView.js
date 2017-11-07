@@ -64,7 +64,7 @@ class GridView extends Component {
         {...this.props}
         dataSource={this.state.dataSource}
         contentContainerStyle={[
-          styles.list,
+          {width:this.props.width},
           this.props.contentContainerStyle,
         ]}
         renderRow={(rowData, sectionID, rowID, ...args) => {
@@ -159,8 +159,7 @@ class GridView extends Component {
 
 const styles = StyleSheet.create({
   list: {
-    flexWrap: 'wrap',
-    alignItems: 'flex-start',
+
   },
   row: {
     flexDirection: 'row',
@@ -171,3 +170,4 @@ const styles = StyleSheet.create({
 });
 
 export default GridView;
+
